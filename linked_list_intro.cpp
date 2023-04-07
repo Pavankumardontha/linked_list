@@ -3,6 +3,62 @@
 #define ll long long int 
 using namespace std;
 
+/* Linked lists using structures */
+
+struct Node
+{
+    int data;
+    Node* next;
+    Node(int x)
+    {
+        data = x;
+        next = NULL;
+    }
+};
+
+void display(Node* temp)
+{
+    while(temp!=NULL)
+    {
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
+    cout<<endl;
+}
+
+void add(Node* head, Node* temp)
+{
+    // add the temp node at the end of the head linkedlist
+    if(head==NULL or temp==NULL)
+    return;
+    while(head->next!=NULL)
+    head = head->next;
+    head->next = temp;
+}
+
+int main()
+{
+    // creating a linked list and attaching nodes to it
+    Node* head = new Node(2);
+    temp1 = new Node(3);
+    temp2 = new Node(4);
+    temp3 = new Node(5);
+    add(head,temp1);
+    add(head,temp2);
+    add(head,temp3);
+    display(head);    
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------
+Linked lists can also be initialised using classes which is the second approach listed below */
 class Node
 {
     public:
