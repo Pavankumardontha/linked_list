@@ -3,5 +3,5 @@
 3) Remove ll elements (leetcode)
 4) Remove nodes from ll (leetcode)
 5) Delete a Node in Single Linked List (GFG)
-6) 
+6) Design linked list (leetcode) - very important do it using single linked list and double linked list
 
