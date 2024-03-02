@@ -5,8 +5,6 @@
 5) Delete a Node in Single Linked List (GFG)
 6) Design linked list (leetcode) - use single linked list (very important do it using single linked list and double linked list)
 7) Design linked list (leetocode) - use double linked list.
-8) Design LRU cache
-9) Reverse a Doubly linked list
+8) Odd even linked list (leetcode)
+9) Add two numbers (leetcode)
 10) 
-11) Odd even linked list (leetcode)
-12) Add two numbers (leetcode)
