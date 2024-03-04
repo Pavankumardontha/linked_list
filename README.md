@@ -8,3 +8,6 @@
 8) Odd even linked list (leetcode)
 9) Add two numbers (leetcode)
 10) Design LRU cache (leetcode)
+11) Reverse a Linked list (leecode)
+12) Reverse Doubly Linked list (GFG)
+13) 
