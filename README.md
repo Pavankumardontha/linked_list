@@ -15,4 +15,5 @@
 15) Find length of loop (GFG)
 16) Delete the middle node of the linked list (leetcode)
 17) Linked List cycle - 2 (leetcode)
-18) 
+18) Delete all occurences of a key in doubly linked list (coding ninjas)
+19) 
