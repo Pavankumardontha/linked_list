@@ -12,4 +12,6 @@
 12) Reverse Doubly Linked list (GFG)
 13) Middle element of the linked list (leetcode)
 14) Detect loop in a linked list (leetcode)
-15) 
+15) Find length of loop (GFG)
+16) Delete the middle node of the linked list (leetcode)
+17) 
