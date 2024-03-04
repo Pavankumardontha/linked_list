@@ -175,7 +175,7 @@ public:
             else
             {
                 Node* tail = dl->getTailNode();
-                dl->removeTailNode();
+                dl->deleteTailNode();
                 mp.erase(tail->key);
                 dl->insertAtHead(node);
             }
