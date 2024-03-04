@@ -14,4 +14,5 @@
 14) Detect loop in a linked list (leetcode)
 15) Find length of loop (GFG)
 16) Delete the middle node of the linked list (leetcode)
-17) 
+17) Linked List cycle - 2 (leetcode)
+18) 
