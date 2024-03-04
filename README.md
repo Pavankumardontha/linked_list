@@ -7,4 +7,4 @@
 7) Design linked list (leetocode) - use double linked list (very important)
 8) Odd even linked list (leetcode)
 9) Add two numbers (leetcode)
-10) 
+10) Design LRU cache (leetcode)
