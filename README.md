@@ -16,4 +16,5 @@
 16) Delete the middle node of the linked list (leetcode)
 17) Linked List cycle - 2 (leetcode)
 18) Delete all occurences of a key in doubly linked list (coding ninjas)
-19) 
+19) Remove nth node from end (leetcode)
+20) 
