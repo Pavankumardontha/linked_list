@@ -17,4 +17,4 @@
 17) Linked List cycle - 2 (leetcode)
 18) Delete all occurences of a key in doubly linked list (coding ninjas)
 19) Remove nth node from end (leetcode)
-20) 
+20) Merge two sorted lists (leetcode)
