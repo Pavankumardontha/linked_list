@@ -8,6 +8,9 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+
+/* APPROACH - 1 Using extra space */
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) 
@@ -73,3 +76,75 @@ public:
         return head;
     }
 };
+
+
+/*APPROACH-2 Using contant space very important solution */
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) 
+    {
+        /*
+        Merging 2 sorted linked lists without using extra space
+        */
+        ListNode* head = NULL;
+        ListNode* tail = NULL;
+        ListNode* temp1 = list1;
+        ListNode* temp2 = list2;
+        if(temp1 == NULL)
+        return temp2;
+        if(temp2 == NULL)
+        return temp1;
+        while(temp1 != NULL and temp2 != NULL)
+        {
+            if(head==NULL)
+            {
+                if(temp1->val <= temp2->val)
+                {
+                    head=temp1;
+                    tail=temp1;
+                    temp1 = temp1->next;
+                }
+                else
+                {
+                    head=temp2;
+                    tail=temp2;
+                    temp2 = temp2->next;
+                }
+
+            }
+            else
+            {
+                if(temp1->val <= temp2->val)
+                {
+                    // we need to assign temp1 to tail and move temp1 to next
+                    tail->next=temp1;
+                    tail=temp1;
+                    temp1=temp1->next;
+                }
+                else
+                {
+                    // assign temp2 to tail and move temp2 to next node
+                    tail->next = temp2;
+                    tail=temp2;
+                    temp2=temp2->next;
+                }
+            }
+        }
+        while(temp1!=NULL)
+        {
+            tail->next=temp1;
+            tail=temp1;
+            temp1=temp1->next;
+        }
+        while(temp2 != NULL)
+        {
+            tail->next=temp2;
+            tail=temp2;
+            temp2=temp2->next;
+        }
+        tail->next=NULL;
+        return head;
+    }
+};
+
+
