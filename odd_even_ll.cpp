@@ -10,6 +10,61 @@
  */
 class Solution {
 public:
+    ListNode* oddEvenList(ListNode* head) {
+        if(head==NULL or head->next == NULL)
+        return head;
+        int current_ind = 0;
+        ListNode* current = head;
+        ListNode* evenhead=NULL;
+        ListNode* oddhead=NULL;
+        ListNode* eventail=NULL;
+        ListNode* oddtail=NULL;
+        while(current != NULL)
+        {
+            if(current_ind%2 == 0)
+            {
+                // even index
+                if(evenhead==NULL)
+                {
+                    evenhead=current;
+                    eventail=current;
+                }
+                else
+                {
+                    eventail->next=current;
+                    eventail=current;
+                }
+            }
+            else
+            {
+                // odd index
+                if(oddhead==NULL)
+                {
+                    oddhead = current;
+                    oddtail = current;
+                }
+                else
+                {
+                    oddtail->next = current;
+                    oddtail = current;
+                }
+            }
+            current_ind++;
+            current = current->next;
+        }
+        eventail->next = oddhead;
+        oddtail->next = NULL;
+        return evenhead;
+    }
+};
+
+
+
+
+
+
+class Solution {
+public:
     ListNode* oddEvenList(ListNode* head) 
     {
         // start from head and jump 2 steps at once
