@@ -23,3 +23,4 @@
 23) Merge two sorted lists (without extra space leetcode)
 24) Sort linked list of 0's 1's 2's (gfg)
 25) Palindrome linked list
+26) Design browser history
