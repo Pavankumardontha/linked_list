@@ -20,3 +20,4 @@
 20) Merge two sorted lists (leetcode)
 21) Merge two sorted lists (without extra space leetcode)
 22) Sort linked list of 0's 1's 2's (gfg)
+23) Palindrome linked list
