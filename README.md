@@ -21,6 +21,7 @@
 21) Remove nth node from end (leetcode)
 22) Merge two sorted lists (leetcode)
 23) Merge two sorted lists (without extra space leetcode)
-24) Sort linked list of 0's 1's 2's (gfg)
-25) Palindrome linked list
-26) Design browser history
+24) Merge K sorted lists
+25) Sort linked list of 0's 1's 2's (gfg)
+26) Palindrome linked list
+27) Design browser history
