@@ -1,6 +1,4 @@
-/*
- 
-  Node is defined as
+/*  Node is defined as
   struct Node {
     int data;
     struct Node *next;
@@ -8,102 +6,95 @@
         data = x;
         next = NULL;
     }
-};
+};*/
 
-*/
-class Solution
+void addNode(Node* &head, Node* &tail,Node* &node)
 {
-    public:
-    //Function to sort a linked list of 0s, 1s and 2s.
-    Node* segregate(Node *head) 
+    if(head==NULL)
     {
-        // traverse the entire linked list and break it down into 3 linked lists each having only 0's,1's or 2's
-        Node* temp = head;
-        Node* zerohead=NULL;
-        Node* zerotail=NULL;
-        Node* onehead=NULL;
-        Node* onetail=NULL;
-        Node* twohead=NULL;
-        Node* twotail=NULL;
-        while(temp!=NULL)
-        {
-            Node* node = new Node(temp->data);
-            if(temp->data==0)
-            {
-                if(zerohead==NULL)
-                {
-                    zerohead=node;
-                    zerotail=node;
-                }
-                else
-                {
-                    zerotail->next=node;
-                    zerotail=node;
-                }
-            }
-            else if(temp->data==1)
-            {
-                if(onehead==NULL)
-                {
-                    onehead=node;
-                    onetail=node;
-                }
-                else
-                {
-                    onetail->next=node;
-                    onetail=node;
-                }
-            }
-            else
-            {
-                if(twohead==NULL)
-                {
-                    twohead=node;
-                    twotail=node;
-                }
-                else
-                {
-                    twotail->next=node;
-                    twotail=node;
-                }
-            }
-            temp=temp->next;
-        }
-        // after traversing we will have 3 linked lists. We need to now connect them.
+        head=node;
+        tail=node;
+    }
+    else
+    {
+        tail->next=node;
+        tail=node;
+    }
+}
+class Solution {
+  public:
+    Node* segregate(Node* head) 
+    {
+        /*
+        Method-1:- Keep the counts of 0,1 and 2's as 
+        c0,c1 and c2. Traverse the linked list and updates the
+        counts accordingly. After we got the counts, we can again
+        traverse the linked list and place c0 0's , c1 1's and 
+        c2 2's in the linked list.
+        Time complexity : O(2n)
+        Space : o(1)
         
-        Node* final_head=NULL;
-        Node* final_tail=NULL;
-        if(zerohead!=NULL)
+        Can we do better ?? - yes
+        Method-2:- we break down the linked list into 3 linked 
+        lists. 
+        First linked list only containing 0's
+        second linked list only containing 1's
+        and thir linked list only containing 2's
+        and then we will attach the 
+        tail1->tail2->tail3
+        */
+        if(head == NULL or head->next == NULL)
+        return head;
+        Node* current = head;
+        Node* h0=NULL; // head of linked list with node 0's
+        Node* h1=NULL; // head of linked list with node 1's
+        Node* h2=NULL; // head of linked list with node 2's
+        Node* t0=NULL;
+        Node* t1=NULL;
+        Node* t2=NULL;
+        while(current != NULL)
         {
-            final_head=zerohead;
-            final_tail=zerotail;
-        }
-        if(onehead!=NULL)
-        {
-            if(final_head==NULL)
-            {
-                final_head=onehead;
-                final_tail=onetail;
-            }
+            if(current->data == 0)
+            addNode(h0,t0,current);
+            else if(current->data==1)
+            addNode(h1,t1,current);
             else
-            {
-                final_tail->next=onehead;
-                final_tail=onetail;
-            }
+            addNode(h2,t2,current);
+            current = current->next;
         }
-        if(twohead!=NULL)
+        head=NULL; // head of the combined linked list
+        Node* tail=NULL; // tail of the combiner linked list
+        if(h0!=NULL)
         {
-            if(final_head==NULL)
+            head=h0;
+            tail=t0;
+            if(h1!=NULL)
             {
-                final_head=twohead;
-                final_tail=twotail;
+                tail->next=h1;
+                tail = t1;
             }
-            else
+            if(h2!=NULL)
             {
-                final_tail->next=twohead;
-                final_tail=twotail;
+                tail->next=h2;
+                tail=t2;
             }
         }
-        return final_head;
+        else if(h1!=NULL)
+        {
+            head=h1;
+            tail=t1;
+            if(h2!=NULL)
+            {
+                tail->next=h2;
+                tail=t2;
+            }
+        }
+        else if(h2!=NULL)
+        {
+            head=h2;
+            tail=t2;
+        }
+        tail->next = NULL;
+        return head;
     }
 };
