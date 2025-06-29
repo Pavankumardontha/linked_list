@@ -18,12 +18,13 @@
 18) Delete the middle node of the linked list (leetcode)
 19) Linked List cycle - 2 (leetcode)
 20) Delete all occurences of a key in doubly linked list (coding ninjas)
-21) Find pairs with given sum in doubly linked list (GFG)
-22) Remove nth node from end (leetcode)
-23) Merge two sorted lists (leetcode)
-24) Merge two sorted lists (without extra space leetcode)
-25) Merge K sorted lists
-26) Sort linked list of 0's 1's 2's (gfg)
-27) Palindrome linked list
-28) Copy list with random pointer
-29) Design browser history
+21) Remove duplicates from a sorted doubly linked list
+22) Find pairs with given sum in doubly linked list (GFG)
+23) Remove nth node from end (leetcode)
+24) Merge two sorted lists (leetcode)
+25) Merge two sorted lists (without extra space leetcode)
+26) Merge K sorted lists
+27) Sort linked list of 0's 1's 2's (gfg)
+28) Palindrome linked list
+29) Copy list with random pointer
+30) Design browser history
