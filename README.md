@@ -24,4 +24,5 @@
 24) Merge K sorted lists
 25) Sort linked list of 0's 1's 2's (gfg)
 26) Palindrome linked list
-27) Design browser history
+27) Copy list with random pointer
+28) Design browser history
