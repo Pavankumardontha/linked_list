@@ -13,22 +13,23 @@
 13) Design LRU cache (leetcode)
 14) Reverse a Linked list (leecode)
 15) Reverse Doubly Linked list (GFG)
-16) Middle element of the linked list (leetcode)
-17) Detect loop in a linked list (leetcode)
-18) Find length of loop (GFG)
-19) Delete the middle node of the linked list (leetcode)
-20) Linked List cycle - 2 (leetcode)
-21) Delete all occurences of a key in doubly linked list (coding ninjas)
-22) Remove duplicates from a sorted doubly linked list
-23) Find pairs with given sum in doubly linked list (GFG)
-24) Remove nth node from end (leetcode)
-25) Merge two sorted lists (leetcode)
-26) Merge two sorted lists (without extra space leetcode)
-27) Merge K sorted lists
-28) Sort list
-29) Flattening a linked list (GFG)
-30) Flatten a multilevel doubly ll
-31) Sort linked list of 0's 1's 2's (gfg)
-32) Palindrome linked list
-33) Copy list with random pointer
-34) Design browser history
+16) Reverse nodes in k-group
+17) Middle element of the linked list (leetcode)
+18) Detect loop in a linked list (leetcode)
+19) Find length of loop (GFG)
+20) Delete the middle node of the linked list (leetcode)
+21) Linked List cycle - 2 (leetcode)
+22) Delete all occurences of a key in doubly linked list (coding ninjas)
+23) Remove duplicates from a sorted doubly linked list
+24) Find pairs with given sum in doubly linked list (GFG)
+25) Remove nth node from end (leetcode)
+26) Merge two sorted lists (leetcode)
+27) Merge two sorted lists (without extra space leetcode)
+28) Merge K sorted lists
+29) Sort list
+30) Flattening a linked list (GFG)
+31) Flatten a multilevel doubly ll
+32) Sort linked list of 0's 1's 2's (gfg)
+33) Palindrome linked list
+34) Copy list with random pointer
+35) Design browser history
