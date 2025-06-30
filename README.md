@@ -33,3 +33,4 @@
 33) Palindrome linked list
 34) Copy list with random pointer
 35) Design browser history
+36) Design LRU cache
