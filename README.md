@@ -25,7 +25,8 @@
 25) Merge two sorted lists (leetcode)
 26) Merge two sorted lists (without extra space leetcode)
 27) Merge K sorted lists
-28) Sort linked list of 0's 1's 2's (gfg)
-29) Palindrome linked list
-30) Copy list with random pointer
-31) Design browser history
+28) Flattening a linked list
+29) Sort linked list of 0's 1's 2's (gfg)
+30) Palindrome linked list
+31) Copy list with random pointer
+32) Design browser history
